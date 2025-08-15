@@ -55,12 +55,14 @@ def get_filtered_unread_emails(
                                 body = "[Could not decode body]"
 
                         unread_emails.append({
-                            "id": email_id.decode(),  # UID or sequence number
-                            "subject": msg.get("subject", ""),
-                            "from": msg.get("from", ""),
-                            "body": body,
-                            "messageId": msg.get("Message-ID", "")
-                        })
+    "id": email_id.decode(),
+    "subject": msg.get("subject", ""),
+    "from_email": msg.get("from", ""),              # fixed key
+    "body": body,
+    "message_id": msg.get("Message-ID", ""),        # fixed key
+    "timestamp": datetime.utcnow()                  # optional if you want it filled
+})
+
 
             return unread_emails
 

@@ -1,3 +1,5 @@
+*.db
+
 .temp/
 
 # Byte-compiled / optimized / DLL files
