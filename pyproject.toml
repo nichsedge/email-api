@@ -6,6 +6,7 @@ dependencies = [
     "fastapi>=0.116.1",
     "imapclient>=3.0.1",
     "python-dotenv>=1.1.1",
+    "python-multipart>=0.0.20",
     "secure-smtplib>=0.1.1",
     "uvicorn>=0.35.0",
 ]

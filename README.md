@@ -25,10 +25,3 @@ Or simply click:
 ## Thanks
 
 Thanks to [Harish](https://harishgarg.com) for the [inspiration to create a FastAPI quickstart for Render](https://twitter.com/harishkgarg/status/1435084018677010434) and for some sample code!
-
-
-curl "http://127.0.0.1:8000/emails?filter_by=today&mark_as_read=false"
-curl -X POST "http://127.0.0.1:8000/send?receiver_email=muhammad.ichsanul19@gmail.com&subject=Hello&body=This%20is%20a%20test"
-
-curl "https://email-api-ax2e.onrender.com/emails?filter_by=today&mark_as_read=false"
-curl -X POST "https://email-api-ax2e.onrender.com/send?receiver_email=muhammad.ichsanul19@gmail.com&subject=Hello&body=This%20is%20a%20test"
