@@ -3,15 +3,16 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from utils.email_utils import SENDER_EMAIL, APP_PASSWORD
 
+
 def send_email(receiver_email, subject, body):
-    smtp_server = 'smtp.gmail.com'
+    smtp_server = "smtp.gmail.com"
     smtp_port = 587
     try:
         message = MIMEMultipart()
-        message['From'] = SENDER_EMAIL
-        message['To'] = receiver_email
-        message['Subject'] = subject
-        message.attach(MIMEText(body, 'plain'))
+        message["From"] = SENDER_EMAIL
+        message["To"] = receiver_email
+        message["Subject"] = subject
+        message.attach(MIMEText(body, "plain"))
 
         with smtplib.SMTP(smtp_server, smtp_port) as server:
             server.starttls()

@@ -9,4 +9,6 @@ SENDER_EMAIL = os.getenv("GMAIL_EMAIL")
 APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 
 if not SENDER_EMAIL or not APP_PASSWORD:
-    raise ValueError("Missing GMAIL_EMAIL or GMAIL_APP_PASSWORD in environment variables.")
+    raise ValueError(
+        "Missing GMAIL_EMAIL or GMAIL_APP_PASSWORD in environment variables."
+    )
