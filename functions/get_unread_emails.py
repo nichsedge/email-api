@@ -66,7 +66,7 @@ def get_filtered_unread_emails(
                             {
                                 "id": email_id.decode(),
                                 "subject": msg.get("subject", ""),
-                                "from_email": msg.get("from", ""),  # fixed key
+                                "from": msg.get("from", ""),  # fixed key
                                 "body": body,
                                 "message_id": msg.get("Message-ID", ""),  # fixed key
                                 "timestamp": datetime.utcnow(),  # optional if you want it filled
